@@ -172,7 +172,7 @@ class PYPDF(APIView):
             today_html = datetime.datetime.now().strftime("%Y-%m-%d")
 
             # Load the template
-            template = loader.get_template('email/tm/export.html')
+            template = loader.get_template('tm/export.html')
 
             # Render the template with the provided context
             html_file_name = f'Transactions-{today}.html'
