@@ -26,7 +26,7 @@ def internal_server_error_response(message='Internal Server Error', status_code=
 
 
 class PYPDF(APIView):
-    def get(**kwargs):
+    def get(self, request):
         try:
             # Email.send_aws_error_notification('olanrewaju@prembly.com','Export Start','EXPORTING PROCESS STARTED')
             columns = {
