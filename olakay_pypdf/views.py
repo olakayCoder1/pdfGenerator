@@ -153,11 +153,10 @@ class PYPDF(APIView):
                     }
                 }
             ]
-            request = kwargs['request']
 
 
 
-            columns_format = request.data.get('columns',[])
+            columns_format = request.GET.get('columns',[])
 
             if not columns_format:columns_format =  list(columns.keys())
 
